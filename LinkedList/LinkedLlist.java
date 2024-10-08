@@ -1,12 +1,9 @@
 package com.onkar;
 
-import java.security.spec.RSAOtherPrimeInfo;
-import java.util.jar.JarEntry;
-
-public class LinkedLlist {
+public class LinkedList {
     Node head;
     private int size;
-    LinkedLlist(){
+    LinkedList(){
         this.size = 0;
     }
     class Node{
@@ -41,7 +38,7 @@ public class LinkedLlist {
         while(currentNode.next != null){
             currentNode = currentNode.next;
         }
-         currentNode.next =newNode;
+        currentNode.next =newNode;
     }
 
     // print list
@@ -116,8 +113,46 @@ public class LinkedLlist {
         head = prvNode;
     }
 
+    // Insert at the given index
+    public void addInMiddle(int index,String data){
+        if(index > size || index < 0 ){
+            System.out.println("invalid index");
+            return;
+        }
+        size++;
+
+        Node newNode = new Node(data);
+        if (head == null || index == 0){
+            newNode.next = head;
+            head = newNode;
+        }
+
+        Node currNode = this.head;
+        for(int i = 1;i <size;i++){
+            if(i == index){
+                Node nextNode = currNode.next;
+                currNode.next = newNode;
+                newNode.next = nextNode;
+                break;
+            }
+            currNode = currNode.next;
+        }
+    }
+
+    // reverse linked list using recursion
+    public Node reverseRecursive(Node head){
+        if(head == null || head.next == null){
+            return head;
+        }
+
+        Node newNode = reverseRecursive(head.next);
+        head.next.next = head;
+        head.next = null;
+        return newNode;
+    }
+
     public static void main(String[] args) {
-       LinkedLlist ll = new LinkedLlist();
+        LinkedList ll = new LinkedList();
         /*ll.addFirst("a");
         ll.addFirst("is");
         ll.addLast("list");
@@ -133,6 +168,8 @@ public class LinkedLlist {
         ll.addLast("4");
         ll.printList();
         ll.reverseIterate();
+        ll.printList();
+        ll.head = ll.reverseRecursive(ll.head);
         ll.printList();
     }
 }
