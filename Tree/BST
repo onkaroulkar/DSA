@@ -1,0 +1,21 @@
+# Binary Search Tree.
+<br> Left subtree nodes > root
+<br> Right subtree nodes < root
+<br> Left and Right subtrees are also BST with no duplicates.
+
+# Special Property
+<br> Inorder traversal of a BST gives a sorted sequence.
+
+# Strategy
+<br> Most of the problem will be solved using recursion i.e. by dividing into the subproblems and making recursion calls on the subtree.
+
+# Delete a Node
+<br> Case1: No Child(Leaf Node)
+<br> Delete Node & Return Null to parent
+
+<br> Case2: One Child
+<br> Delete node and replace with child node.
+
+<br> Case3: Two Children
+<br> Replace value with inorder successor.
+<br> Delete the node for inorder successor.
