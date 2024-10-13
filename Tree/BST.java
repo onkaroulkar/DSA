@@ -1,4 +1,4 @@
-package com.onkar;
+import java.util.ArrayList;
 
 public class BST {
     public static class Node{
@@ -62,29 +62,28 @@ public class BST {
             root.left = delete(root.left,val);
         }
 
-       else if(root.data < val){
+        else if(root.data < val){
             root.right = delete(root.right,val);
         }
-       else{
+        else {
 
-           // case1
-            if(root.left == null && root.right == null){
+            // case1
+            if (root.left == null && root.right == null) {
                 return null;
             }
 
             // case2
-            if(root.left == null){
+            if (root.left == null) {
                 return root.right;
-            }else {
+            } else {
                 return root.left;
             }
-
-                // case3
-                Node IS = inorderSuccessor(root.right);
-                root.data = IS.data;
-                root.right = delete(root.right, IS.data);
-            }
-       return root;
+        }
+        // case3
+        Node IS = inorderSuccessor(root.right);
+        root.data = IS.data;
+        root.right = delete(root.right, IS.data);
+        return root;
     }
 
     public static Node inorderSuccessor(Node root){
@@ -92,6 +91,50 @@ public class BST {
             root = root.left;
         }
         return root;
+    }
+
+    // Problem -1
+    // Print  in a range.
+    public static void printInRange(Node root,int x,int y){
+        if(root == null){
+            return;
+        }
+
+        if(root.data >= x && root.data <=y){
+            printInRange(root.left,x,y);
+            System.out.print(root.data+" ");
+            printInRange(root.right,x,y);
+        }
+        else if(root.data >=y){
+            printInRange(root.left,x,y);
+        }
+        else{
+            printInRange(root.right,x,y);
+        }
+    }
+
+    //problem-2
+    // Root to leaf path.
+    public static void printRoot2Leaf(Node root, ArrayList<Integer> path){
+        if(root == null){
+            return;
+        }
+        path.add(root.data);
+        // leaf
+        if(root.left == null && root.right == null){
+            printPath(path);
+        }else{
+            printRoot2Leaf(root.left,path);
+            printRoot2Leaf(root.right,path);
+        }
+        path.remove(path.size()-1);
+    }
+
+    public static void printPath(ArrayList<Integer> path){
+        for(int i=0;i<path.size();i++){
+            System.out.print(path.get(i)+"->");
+        }
+        System.out.println();
     }
 
     public static void main(String[] args) {
@@ -110,5 +153,10 @@ public class BST {
         }else{
             System.out.println("key not found");
         }
+
+        //delete(root,7);
+        //inorder(root);
+        printInRange(root,3,5);
+        printRoot2Leaf(root,new ArrayList<>());
     }
 }
