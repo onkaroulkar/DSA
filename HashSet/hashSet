@@ -1,0 +1,11 @@
+# HashSet
+<br> Set                           Array        sortedArray      BST
+<br> Insert/add --> O(1)         |  O(1)     |  O(n)          |  O(H)
+<br> Search/contains --> O(1)    |  O(n)     |  O(logn)       |  O(H)
+<br> Delete/Remove --> O(1)      |  O(n)     |  O(n)          |  O(H)
+
+# Working fo Iterator
+<br> Set does not maintain the order of a insertion.
+<br>  .next() ---> returns the next element.
+<br>  .hasNext() ---> returns true or false.
+
