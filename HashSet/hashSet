@@ -9,3 +9,9 @@
 <br>  .next() ---> returns the next element.
 <br>  .hasNext() ---> returns true or false.
 
+# HashMap
+<br> key-->value pair.
+<br> un-order data structure.
+
+# Iteration in HashMap
+<br> Map.Entry<Integer,Integer>e:Map.entrySet();

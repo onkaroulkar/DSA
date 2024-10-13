@@ -1,11 +1,11 @@
-import java.util.HashSet;
-import java.util.Iterator;
+import java.util.*;
 
 public class Hashing {
 
     public static void main(String[] args) {
         // creating
         HashSet<Integer> set = new HashSet<>();
+        HashMap<String,Integer> map = new HashMap<>();
 
         // Insert
         set.add(1);
@@ -33,6 +33,36 @@ public class Hashing {
 
         while(it.hasNext()){
             System.out.println(it.next());
+        }
+
+        // map-insert
+        map.put("india",120);
+        map.put("US",130);
+        map.put("China",150);
+
+        System.out.println(map);
+
+        //searching
+        if(map.containsKey("Indonesia")){
+            System.out.println("Key is present in the map");
+        }else{
+            System.out.println("key is not present in the map");
+        }
+
+        System.out.println(map.get("China"));
+        System.out.println(map.get("Indonesia"));
+
+        // for(int val : arr)
+        // 1st way
+        for(Map.Entry<String,Integer> e:map.entrySet()){
+            System.out.println(e.getKey());
+            System.out.println(e.getValue());
+        }
+
+        // 2nd way
+        Set<String> keys = map.keySet();
+        for(String key : keys) {
+            System.out.println(key + " "+ map.get(key));
         }
     }
 }
