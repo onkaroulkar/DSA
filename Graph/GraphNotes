@@ -9,7 +9,23 @@
 <br> Edge List.
 <br> 2D Matrix(Implicit Graph)
 
-#Adjancency List
+#Adjacency List
 <br> multiple ways to create adjacency list like array of arrayList or hashMap.
 <br> eg. 0 ----> (0,2) , 1--->(0,3)
-<br> 
+<br> Adjacency list doses not use extra space.
+<br> No extra space -- time optimised.
+
+#Adjacency Matrix
+<br> Use extra space.
+<br> V = vertex.
+<br> space complexity O(V^2)
+<br> Time complexity O(V)
+
+#Edge List
+<br> Edges = {(0,2),(1,2),(1,3),(2,3)}
+<br> Used in minimum spanning tree algorithm.
+
+#Graph Traversal
+<br> Breath first search(BFS) -- Go to immediate neighbour first.
+<br> use Queue data structure for BFS.
+<br> Depth first search(DFS)
