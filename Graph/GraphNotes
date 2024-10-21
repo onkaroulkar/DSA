@@ -1,0 +1,15 @@
+# Graph
+<br> Graph is a network of nodes.
+<br> Edge- connect two nodes.
+<br> Application - Maps, Social Network, Delivery Network.
+
+#Sorting a graph
+<br> Adjacency List.
+<br> Adjacency Matrix.
+<br> Edge List.
+<br> 2D Matrix(Implicit Graph)
+
+#Adjancency List
+<br> multiple ways to create adjacency list like array of arrayList or hashMap.
+<br> eg. 0 ----> (0,2) , 1--->(0,3)
+<br> 
