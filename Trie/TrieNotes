@@ -1,0 +1,8 @@
+# Trie Notes
+<br> Also called as "prefix" or "digita search" or "retrieval tree.
+<br> Trie is also a tree.
+<br> In trie each node has many children, so its heavy.
+<br> Time complexity of tries is O(L) ---> Length of the word.
+<br> Trie is used for fast search.
+<br> root is empty node.
+<br> prefix is not repeated.

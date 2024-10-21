@@ -1,3 +1,5 @@
+package com.onkar;
+
 public class Trie  {
 
       static class Node{
@@ -49,6 +51,9 @@ public class Trie  {
 
     // Problem No.1 - word break problem.
     // given an input string and directory of the words, find out if the input string can be broken into a space-separated sequence of directory words.
+    // eg. words[] = {i,like,sam,samsung,mobile,ice}
+    // key = "ilikesamsung"
+    // output = true
     // steps -
     // 1. find all possible parts of the string by using loops.
     // 2. 1st part - trie search + 2nd part - recursive call.
@@ -70,6 +75,8 @@ public class Trie  {
     // Problem No.2 - startsWithProblem
     // Create a function boolean statsWith(String prefix) for a trie.
     // Return true if there is a previously inserted string word that has the prefix,and false otherwise.
+    // eg. words[] = {"apple","app","mango","man","women"}
+    // prefix = "app"  output = true
     // Steps:
     // 1. Apply for loop from 0 to prefix.length.
     // 2. Calculate the index  of each character of the prefix.
@@ -91,6 +98,7 @@ public class Trie  {
     // Problem No.3 - Count Unique Substrings.
     // Given a string of length n of lowercase alphabet characters,
     // we need to count total no of distinct substring of this string.
+    // eg. str = "ababa"    ans = 10
     // Steps:
     // 1. Find all the suffix of the string.
     // 2. create a trie from the suffix.
@@ -111,6 +119,7 @@ public class Trie  {
     // Problem 4
     // Longest Word with all Prefixes.
     // Find the longest string in words such that every prefix of it is also in words.
+    // eg. words[] = {"a","banana","app","ap","apply","apple"}     ans = "apple"
     // steps:
     // 1. Create "ans" string variable and "temp" StringBuilder variable.
     // 2. Check children node is not empty and children eow value is true.
