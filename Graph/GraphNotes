@@ -28,4 +28,8 @@
 #Graph Traversal
 <br> Breath first search(BFS) -- Go to immediate neighbour first.
 <br> use Queue data structure for BFS.
-<br> Depth first search(DFS)
+
+<br> Depth first search(DFS)--- keep going to the first neighbour.
+
+#Cyle Detection(Directed Graph)
+<br>
