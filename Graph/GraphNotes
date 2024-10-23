@@ -32,4 +32,19 @@
 <br> Depth first search(DFS)--- keep going to the first neighbour.
 
 #Cyle Detection(Directed Graph)
-<br>
+<br> Use modified DSF code for directed graph cycle detection.
+
+#Topological Sorting
+<br> Directed Acyclic Graph (DAG) is a directed graph with no cycles.
+<br> Topological sorting is used only for DAGs (not for non-DAGs).
+<br> It is a linear order of vertices such that every directed edge u--->v.
+<br> The vertex u comes before v in the order.
+
+#Cycle in Graph
+<br> undirected graph----DFS
+<br>                     BFS
+<br>                     DSU(Disjoint set union)
+<br> Directed Graph -----DFS
+<br>                     BFS
+<br>                     Topological Sorting(kahn's Algorithm).
+
