@@ -69,6 +69,7 @@ public class Graph4 {
         for(int i=0; i<v; i++){
             if(!visited[i]){
                 System.out.println(isCycleUndirected(graph,visited,i,-1));
+
             }
         }
     }
