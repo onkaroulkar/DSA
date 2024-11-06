@@ -48,3 +48,6 @@
 <br>                     BFS
 <br>                     Topological Sorting(kahn's Algorithm).
 
+# Minimum Spanning Tree(MST)
+<br> A minimum spanning tree(MST) or minimum weight spanning tree is a subset of the edges of a connected, edge-weight undirected graph
+<br> that connects all the vertices together, without any cycle and with the minimum possible total edge weight.
