@@ -54,6 +54,12 @@ public class PrimsAlgorithm {
     }
 
     // Time Complexity O(ElogE)
+    // Algorithm:
+    // Crete a priority queue and store the pair of node and its cost. Priority queue decides the priority based on the cost.
+    // Create the boolean visited array also add the first pair in the queue.
+    // Initially the cost is zero.
+    // Till the queue is not empty, remove the pair from queue if node is not visited then make it visited in visited array also add the cost of the edge.
+    // Find the neighbour of the node if the neighbour node is not visited then add the destination node and its weight in the queue.
     public static void primsAlgo(ArrayList<Edge> graph[], int v){
         PriorityQueue<Pair> pq = new PriorityQueue<>();
         boolean vis[] = new boolean[v];
