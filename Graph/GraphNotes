@@ -56,4 +56,8 @@
 <br> SCC is a component in which we can reach every vertex of the component from every other vertex in that component.
 
 # Kosaraju's Algorithm:
-<br>
+<br> Time complexity: O(V + E)
+<br> Algorithm:
+<br> Get nodes in stack(topological sort)
+<br> Transpose the graph.
+<br> Do DFS according to stack nodes on the transpose graph.
