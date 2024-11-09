@@ -58,3 +58,16 @@
 <br> Time Complexity of the Bellman Ford algorithm is more than the Dijkstra's algorithm.
 <br> Time Complexity O(V * E).
 
+# Minimum Spanning Tree(MST)
+<br> A minimum spanning tree(MST) or minimum weight spanning tree is a subset of the edges of a connected, edge-weight undirected graph
+<br> that connects all the vertices together, without any cycle and with the minimum possible total edge weight.
+
+# Strongly Connected Component<
+<br> SCC is a component in which we can reach every vertex of the component from every other vertex in that component.
+
+# Kosaraju's Algorithm:
+<br> Time complexity: O(V + E)
+<br> Algorithm:
+<br> Get nodes in stack(topological sort)
+<br> Transpose the graph.
+<br> Do DFS according to stack nodes on the transpose graph.
