@@ -46,5 +46,15 @@
 <br>                     DSU(Disjoint set union)
 <br> Directed Graph -----DFS
 <br>                     BFS
-<br>                     Topological Sorting(kahn's Algorithm).
+<br>                     Topological Sorting(kahn's Algori
+
+# Dijkstra's Algorithm
+<br> Dijkstra's algorithm used to find out the shortest distance between two nodes.
+<br> Time Complexity - O(V + log E)
+
+# Bellman Ford Algorithm:
+<br> Used to find out the shortest distance between two nodes.
+<br> Dijkstra's algorithm fails to find the shortest distance between the two nodes with negative edge weight.
+<br> Time Complexity of the Bellman Ford algorithm is more than the Dijkstra's algorithm.
+<br> Time Complexity O(V * E).
 
