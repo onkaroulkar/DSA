@@ -62,8 +62,12 @@
 <br> A minimum spanning tree(MST) or minimum weight spanning tree is a subset of the edges of a connected, edge-weight undirected graph
 <br> that connects all the vertices together, without any cycle and with the minimum possible total edge weight.
 
-# Strongly Connected Component<
+# Minimum Spanning Tree
+<br> A minimum spanning tree(MST) or minimum weight spanning tree is a subset of the edges of a connected, edge-weight undirected graph that connects all the vertices together, without any cycle with the minimum possible total edge weight.
+
+# Strongly Connected Component
 <br> SCC is a component in which we can reach every vertex of the component from every other vertex in that component.
+<br> Only works on directed graph.
 
 # Kosaraju's Algorithm:
 <br> Time complexity: O(V + E)

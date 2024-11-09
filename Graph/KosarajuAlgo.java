@@ -1,4 +1,3 @@
-package com.onkar;
 import java.util.ArrayList;
 import java.util.Stack;
 
@@ -51,6 +50,11 @@ public class KosarajuAlgo {
         }
     }
 
+    // Algorithm:
+    // Get nodes in stack(topological sort)
+    // Transpose the graph.
+    // Do DFS according to stack nodes on the transpose graph.
+    // Time complexity O(V + E)
     public static void kosarajuAlgo(ArrayList<Edge> graph[], int v){
 
         // Step 1:
