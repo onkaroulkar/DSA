@@ -61,3 +61,13 @@
 <br> Get nodes in stack(topological sort)
 <br> Transpose the graph.
 <br> Do DFS according to stack nodes on the transpose graph.
+
+# Bridge in Graph
+<br> Bridge is an edge whose deletion increases the graph's number of connected components  .
+
+# Articulation Point
+<br> A vertex in an undirected connected graph is an articulation point if removing it (and edeges through it) disconnects the graph.
+
+# Tarjan's Algorithm:
+<br> Ancestor: a node A that was discovered before curr node in DFS, is the ancestor of curr.
+
