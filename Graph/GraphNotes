@@ -75,3 +75,7 @@
 <br> Get nodes in stack(topological sort)
 <br> Transpose the graph.
 <br> Do DFS according to stack nodes on the transpose graph.
+
+# Bridge in Graph
+<br> Bridges is an edge whose deletion increases the graph's number of connected components.
+
